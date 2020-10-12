@@ -4,7 +4,7 @@ pipelines:
     - name: test_app
       type: Jenkins
       configuration:
-        jenkinsJobName: master
+        jenkinsJobName: test_escap_char
         jenkinsBranchName: {{gitBranch}}
         integrations:
           - name: jenkins
