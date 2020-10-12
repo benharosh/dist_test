@@ -5,7 +5,7 @@ resources:
       gitProvider: bb_benha
       path: benharosh/dist_test
       branches:
-        include: master
+        include: test/test1/pipe
   - name: jenkins_job_results
     type: PropertyBag
     configuration:
