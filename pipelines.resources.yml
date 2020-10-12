@@ -1,12 +1,12 @@
 resources:
-  - name: bb_test_pipelines_3770
+  - name: master_resource
     type: GitRepo
     configuration:
       gitProvider: bb_benha
       path: benharosh/dist_test
       branches:
         include: master
-  - name: jenkins_job_results
+  - name: jenkins_job_master
     type: PropertyBag
     configuration:
       passing: 0
