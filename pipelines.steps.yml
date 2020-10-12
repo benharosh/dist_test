@@ -1,0 +1,12 @@
+pipelines:
+  - name: test_jenkins_escape_chars
+    steps:
+    - name: test_app
+      type: Jenkins
+      configuration:
+        jenkinsJobName: test_escap_char/job/test/test1/pipe/
+        jenkinsBranchName: {{gitBranch}}
+        integrations:
+          - name: jenkins_aws
+        outputResources:
+          - name: jenkins_job_results
