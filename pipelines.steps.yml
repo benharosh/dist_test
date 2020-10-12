@@ -1,5 +1,5 @@
 pipelines:
-  - name: test_jenkins_escape_chars
+  - name: test_jenkins_escape_chars_master
     steps:
     - name: test_app
       type: Jenkins
