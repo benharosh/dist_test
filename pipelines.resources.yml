@@ -2,7 +2,7 @@ resources:
   - name: master_resource
     type: GitRepo
     configuration:
-      gitProvider: bb_benha
+      gitProvider: git_bh
       path: benharosh/dist_test
       branches:
         include: master
