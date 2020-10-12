@@ -13,7 +13,7 @@ pipeline {
 jfPipelines(
   outputResources: """[
     {
-      "name": "jenkins_job_results",
+      "name": "jenkins_job_master",
       "content": {
         "passing": 1234,
         "failing": 0
