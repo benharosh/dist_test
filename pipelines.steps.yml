@@ -9,12 +9,12 @@ pipelines:
         integrations:
           - name: jenkins
         outputResources:
-          - name: jenkins_job_master
+          - name: jenkins_job_results
     - name: print_results
       type: Bash
       configuration:
         inputResources:
-          - name: jenkins_job_master
+          - name: jenkins_job_results
       execution:
         onExecute:
           - printenv
