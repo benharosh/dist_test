@@ -4,7 +4,7 @@ pipelines:
     - name: test_app
       type: Jenkins
       configuration:
-        jenkinsJobName: test_escap_char/job/test/test1/pipe/
+        jenkinsJobName: master
         jenkinsBranchName: {{gitBranch}}
         integrations:
           - name: jenkins_aws
