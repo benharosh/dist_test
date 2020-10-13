@@ -5,7 +5,7 @@ resources:
       gitProvider: git_bh
       path: benharosh/dist_test
       branches:
-        include: master
+        include: ^{{gitBranch}}$
   - name: jenkins_job_master
     type: PropertyBag
     configuration:
