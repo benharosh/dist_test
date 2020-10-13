@@ -5,7 +5,7 @@ pipelines:
       type: Jenkins
       configuration:
         jenkinsJobName: test_escap_char
-        jenkinsBranchName: {{gitBranch}}
+        jenkinsBranchName: {{gitBranch.replace(/\//g, '%2F')}}
         integrations:
           - name: jenkins
         outputResources:
