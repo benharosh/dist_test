@@ -4,7 +4,7 @@ pipelines:
     - name: test_app
       type: Jenkins
       configuration:
-        jenkinsJobName: mybuild/build4/escape_fwd_slash
+        jenkinsJobName: mybuild/build3/escape_fwd_slash
         jenkinsBranchName: {{gitBranch}}
         integrations:
           - name: jenkins
