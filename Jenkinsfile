@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'echo hello world'
-                sleep 30s
+                sleep time: 30, unit: 'SECONDS'
                 jfPipelines()
             }
         }
