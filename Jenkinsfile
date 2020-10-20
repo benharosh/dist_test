@@ -5,6 +5,8 @@ pipeline {
             steps {
                 sh 'echo hello world'
                 sleep time: 30, unit: 'SECONDS'
+                sh 'echo hello world'
+                sleep time: 30, unit: 'SECONDS'
                 jfPipelines()
             }
         }
